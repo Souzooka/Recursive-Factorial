@@ -2,6 +2,10 @@
 
 function factorial(num) {
 
+  if (typeof num !== 'number') {
+    throw new Error('Only numbers are accepted in this function.');
+  }
+
   if (num < 0) {
     return Infinity;
   }

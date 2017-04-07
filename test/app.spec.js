@@ -13,4 +13,9 @@ describe('Factorial', () => {
     expect(factorial(-2)).to.be.equal(Infinity);
   });
 
+  it('should throw an error if the value passed in ' +
+     'is not a number', () => {
+    expect(() => factorial("hi")).to.throw(Error);
+  });
+
 });
