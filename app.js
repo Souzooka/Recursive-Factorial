@@ -9,7 +9,12 @@ function factorial(num) {
   if (num === 1) {
     return num;
   }
-  return (num) * factorial(--num);
+
+  if (num > 0) {
+    return (num) * factorial(--num);
+  } else {
+    return (++num) * factorial(num);
+  }
 
 }
 
